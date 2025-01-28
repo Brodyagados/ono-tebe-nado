@@ -17,7 +17,7 @@
 
 .header__links-list {
   display: flex;
-  gap: 33px;
+  gap: 32px;
   list-style: circle;
 }
 
@@ -31,7 +31,7 @@
 }
 
 .header__link:not(.header__link_active) {
-  letter-spacing: 1%;
+  letter-spacing: 0.01em;
   border-bottom: 1px solid black;
 }
 
@@ -46,7 +46,7 @@
   height: 105px;
   /* костыли */
   padding-right: 11px;
-  margin-right: 85px;
+  margin-right: 89px;
 }
 
 .address {
@@ -61,4 +61,91 @@
   /* костыли */
   padding-top: 3px;
   margin-right: 25px;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  gap: 135px;
+  color: white;
+  text-transform: uppercase;
+  padding: 165px 50px 51px;
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: 51%;
+  position: relative;
+  z-index: 1;
+}
+
+.cover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.cover__title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 100px;
+}
+
+.aligned-text,
+.aligned-text_center,
+.aligned-text_right {
+  letter-spacing: 0.3em;
+  line-height: 1;
+}
+
+.aligned-text {
+  line-height: 1.15;
+}
+
+.aligned-text_center {
+  align-self: center;
+}
+
+.aligned-text_right {
+  align-self: end;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.ano-letter-spacing {
+  letter-spacing: 0;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text,
+.bet-button {
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.cover__description-text {
+  line-height: 1.27;
+  word-spacing: 19px;
+  padding-left: 27px;
+}
+
+.bet-button {
+  text-transform: uppercase;
+  line-height: 1.15;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 12px 32px 11px 31px;
 }
