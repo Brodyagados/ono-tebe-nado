@@ -1,18 +1,12 @@
 .header {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr max-content 1fr;
   align-items: center;
-  padding: 92px 24px 96px;
+  padding: 92px 49px 92px 51px;
 }
 
 .header a {
   text-decoration: none;
-}
-
-.header__menu {
-  /* костыли */
-  padding-top: 5px;
-  padding-left: 27px;
 }
 
 .header__links-list {
@@ -42,11 +36,7 @@
 .header__logo {
   display: block;
   justify-self: center;
-  width: 148px;
-  height: 105px;
-  /* костыли */
-  padding-right: 11px;
-  margin-right: 89px;
+  width: 137px;
 }
 
 .address {
@@ -58,9 +48,6 @@
   font-size: 18px;
   line-height: 1.25;
   font-style: normal;
-  /* костыли */
-  padding-top: 3px;
-  margin-right: 25px;
 }
 
 .cover {
