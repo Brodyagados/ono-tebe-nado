@@ -228,3 +228,75 @@
   border-bottom: 1px solid black;
   width: max-content;
 }
+
+.about {
+  display: grid;
+  gap: 8px 25px;
+  grid-template-columns: 334px 1fr;
+  grid-template-areas:
+    'about-logo about-title'
+    '. about-text';
+  padding: 179px 24px 0;
+}
+
+.about__column_justify-self_center {
+  justify-self: center;
+}
+
+.about__column_align-self_center {
+  align-self: center;
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
+  justify-self: center;
+  align-content: center;
+  grid-area: about-logo;
+}
+
+.about__logo-image {
+    padding: 52px 46px 46px;
+}
+
+.about__title {
+  align-self: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.174;
+  text-transform: uppercase;
+  grid-area: about-title;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  grid-area: about-text;
+}
+
+.negative-letter-spacing-001 {
+    letter-spacing: -0.01em;
+}
+
+.letter-spacing-001 {
+    letter-spacing: 0.01em;
+}
+
+.letter-spacing-002 {
+    letter-spacing: 0.02em;
+}
+
+.letter-spacing-003 {
+    letter-spacing: 0.03em;
+}
+}
+
+.footer {
+}
