@@ -50,6 +50,12 @@
   font-style: normal;
 }
 
+.address a {
+  text-decoration: none;
+  border: 1px solid black;
+  letter-spacing: 0.01em;
+}
+
 .cover {
   display: flex;
   flex-direction: column;
@@ -258,7 +264,7 @@
 }
 
 .about__logo-image {
-    padding: 52px 46px 46px;
+  padding: 52px 46px 46px;
 }
 
 .about__title {
@@ -282,24 +288,53 @@
 }
 
 .negative-letter-spacing-001 {
-    letter-spacing: -0.01em;
+  letter-spacing: -0.01em;
 }
 
 .letter-spacing-001 {
-    letter-spacing: 0.01em;
+  letter-spacing: 0.01em;
 }
 
 .letter-spacing-002 {
-    letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 }
 
 .letter-spacing-003 {
-    letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 }
 
 .letter-spacing-004 {
-    letter-spacing: 0.04em;
+  letter-spacing: 0.04em;
 }
 
 .footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 180px 50px 88px;
+}
+
+.footer__menu-list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__menu-link {
+  font-size: 18px;
+  line-height: 1.174;
+  text-decoration: none;
+}
+
+.footer__menu-link:not(.footer__menu-link_active) {
+  border-bottom: 1px solid black;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
 }
