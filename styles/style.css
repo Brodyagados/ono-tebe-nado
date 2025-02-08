@@ -44,7 +44,7 @@
   flex-direction: column;
   justify-self: flex-end;
   gap: 2px;
-  width: 240px;
+  max-width: 240px;
   font-size: 18px;
   line-height: 1.25;
   font-style: normal;
@@ -52,8 +52,18 @@
 
 .address a {
   text-decoration: none;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   letter-spacing: 0.01em;
+  width: max-content;
+}
+
+.overlay {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.6;
+  z-index: -1;
 }
 
 .cover {
@@ -70,20 +80,12 @@
   z-index: 1;
 }
 
-.cover::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: black;
-  opacity: 0.6;
-  z-index: -1;
-}
-
 .cover__title {
   display: flex;
   flex-direction: column;
   gap: 20px;
   font-size: 100px;
+  text-transform: uppercase;
 }
 
 .aligned-text,
@@ -138,6 +140,7 @@
   border: 1px solid white;
   color: white;
   padding: 12px 32px 11px 31px;
+  font-family: Raleway, sans-serif;
 }
 
 .lots {
@@ -148,12 +151,14 @@
   font-size: 40px;
   line-height: 1.174;
   margin-left: 40px;
+  text-transform: uppercase;
 }
 
 .lots__card-list {
   margin-top: 27px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
 }
 
@@ -175,15 +180,6 @@
   background-position: 50%;
   position: relative;
   z-index: 1;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background-color: black;
-  opacity: 0.6;
-  z-index: -1;
 }
 
 .card_type_film {
@@ -280,26 +276,6 @@
   line-height: 1.2;
   letter-spacing: 0.01em;
   grid-area: about-text;
-}
-
-.negative-letter-spacing-001 {
-  letter-spacing: -0.01em;
-}
-
-.letter-spacing-001 {
-  letter-spacing: 0.01em;
-}
-
-.letter-spacing-002 {
-  letter-spacing: 0.02em;
-}
-
-.letter-spacing-003 {
-  letter-spacing: 0.03em;
-}
-
-.letter-spacing-004 {
-  letter-spacing: 0.04em;
 }
 
 .footer {
